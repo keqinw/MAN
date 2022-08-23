@@ -1,0 +1,28 @@
+<?xml version="1.0"?> 
+<robot name="cube">
+    <!-- Colors --> 
+    <material name="green"> 
+        <color rgba="1 0.647 0.062 1"/>
+    </material>
+
+    <!-- Plane -->
+    <link name="base_link">
+        <visual> 
+            <geometry> 
+                <box size="0.05 0.15 0.1"/>
+                <origin rpy="0 0 0" xyz="0 0 0"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+        <collision> 
+             <geometry> 
+                <box size="0.05 0.15 0.1"/>
+                <origin rpy="0 0 0" xyz="0 0 0"/>
+            </geometry>
+        </collision> 
+        <inertial> 
+            <mass value="6"/>
+            <inertia ixx="0.01625" ixy="0" ixz="0" iyy="0.00625" iyz="0" izz="0.00625"/>
+        </inertial> 
+    </link> 
+</robot>
