@@ -1,1 +1,1 @@
-# Multi-Agent Learning (MAN)
+# Multi-Action Learning (MAN)
