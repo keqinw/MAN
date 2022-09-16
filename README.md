@@ -5,5 +5,5 @@
 
 ## Performance Comparison on Seaquest (left: MAN, right: Double DQN):
 
-<img src="/media/MAN.gif" alt="MAN" width="400"/>
-<img src="/media/double_DQN.gif" alt="double_DQN" width="400"/>
+<img src="/media/MAN.gif" alt="MAN" width="300"/>
+<img src="/media/double_DQN.gif" alt="double_DQN" width="300"/>
