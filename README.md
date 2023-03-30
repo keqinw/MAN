@@ -1,5 +1,8 @@
 # Multi-Action Learning (MAN)
-The paper link is: https://arxiv.org/abs/2209.09329
+Here is the code base for the paper: MAN: Multi-Action Network Learning. The paper link is: https://arxiv.org/abs/2209.09329
+
+# Preproducing
+There are two experiments for MAN, Atari 2600 games and Block-Stacking task.
 
 ## The results in several Atari 2600 games:
 ![game result](	/media/avg_score.png)
