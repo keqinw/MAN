@@ -1,4 +1,5 @@
 # Multi-Action Learning (MAN)
+The paper link is: https://arxiv.org/abs/2209.09329
 
 ## The results in several Atari 2600 games:
 ![game result](	/media/avg_score.png)
