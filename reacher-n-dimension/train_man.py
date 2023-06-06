@@ -110,8 +110,8 @@ class MAN_Agent():
                     sample_next_state = transition[3]
                     sample_done = transition[-1]
 
-                    u_state_next = torch.cat([sample_next_state,sample_action[:,:j]],dim = 1) 
-                    u_states_next = torch.cat((u_states_next,u_state_next))
+                    u_state_next = torch.cat([sample_next_state,sample_action[:,:j]],dim = 1)
+                    
 
                     u_state = torch.cat([sample_state,sample_action[:,:i]],dim=1)
                     u_states = torch.cat([u_states,u_state])
@@ -125,7 +125,7 @@ class MAN_Agent():
                     if sample_done:
                         y = torch.cat((y,sample_reward))
                     else:
-                        y = torch.cat([y,sample_reward + self.gamma * torch.max(self.agent.target_nets[j](u_states_next).detach())])
+                        y = torch.cat([y,sample_reward + self.gamma * torch.max(self.agent.target_nets[j](u_state_next).detach())])
                 
                 q = torch.gather(self.agent.evaluate_nets[i](u_states),1,actions.view(-1,1))
                 losses.append(F.mse_loss(y.view(-1,1),q))
